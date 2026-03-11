@@ -248,7 +248,7 @@ function Portfolio() {
             </div>
 
             <a
-              href="https://github.com/vrunda1398/semeval_clickbait_spoiler"
+              href="https://github.com/vrunda1398/vrunda-portfolio"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center text-gray-400 hover:text-white transition"
