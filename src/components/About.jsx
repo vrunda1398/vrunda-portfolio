@@ -169,6 +169,9 @@
 
 import { FaGraduationCap, FaLaptopCode } from "react-icons/fa";
 import { motion } from "framer-motion";
+import resume from "/src/assets/Vrunda_VK_Resume.pdf";
+import image from "/src/assets/ai-illustration.png";
+
 
 function About() {
   return (
@@ -184,7 +187,7 @@ function About() {
         {/* RIGHT SIDE — TECH IMAGE */}
       <div className="flex justify-center">
         <img
-          src="/src/assets/ai-illustration.png"
+          src={image}
           alt="AI Illustration"
           className="w-[450px] opacity-80"
         />
@@ -251,7 +254,7 @@ function About() {
           {/* Resume Button */}
           <div className="mt-16">
             <a
-              href="/src/assets/Vrunda_VK_Resume.pdf"
+              href={resume}
               target="_blank"
               rel="noreferrer"
               className="inline-block px-10 py-4 bg-purple-600 hover:bg-purple-500 transition rounded-full text-lg font-semibold shadow-lg"
