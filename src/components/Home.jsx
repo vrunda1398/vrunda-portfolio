@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import profile from "/src/assets/vrunda.jpg";
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
         <div className="flex justify-center">
           <div className="p-2 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-green-400 shadow-xl">
             <img
-              src="/public/vrunda.jpg"
+              src={profile}
               alt="Vrunda Kadam"
               className="w-72 h-72 object-cover rounded-full border-4 border-white"
             />

@@ -70,48 +70,56 @@
 
 // export default Navbar;
 
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
 
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-10 py-5">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10 py-4">
 
-        {/* Logo / Name */}
+        {/* Logo */}
         <div className="text-white font-semibold text-lg tracking-wide">
           VK Portfolio
         </div>
 
-        {/* Links */}
-        <div className="flex space-x-10 text-sm uppercase tracking-widest text-gray-400">
+        {/* Desktop Links */}
+        <div className="hidden md:flex space-x-10 text-sm uppercase tracking-widest text-gray-400">
 
-          <a href="#hero" className="hover:text-white transition relative group">
-            Home
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all group-hover:w-full"></span>
-          </a>
-
-          <a href="#about" className="hover:text-white transition relative group">
-            About
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all group-hover:w-full"></span>
-          </a>
-
-          <a href="#work" className="hover:text-white transition relative group">
-            Experience
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all group-hover:w-full"></span>
-          </a>
-
-          <a href="#portfolio" className="hover:text-white transition relative group">
-            Projects
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all group-hover:w-full"></span>
-          </a>
-
-          <a href="#contact" className="hover:text-white transition relative group">
-            Contact
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all group-hover:w-full"></span>
-          </a>
+          <a href="#hero" className="hover:text-white transition">Home</a>
+          <a href="#about" className="hover:text-white transition">About</a>
+          <a href="#work" className="hover:text-white transition">Experience</a>
+          <a href="#portfolio" className="hover:text-white transition">Projects</a>
+          <a href="#contact" className="hover:text-white transition">Contact</a>
 
         </div>
 
+        {/* Mobile Hamburger */}
+        <div className="md:hidden text-white text-2xl cursor-pointer">
+          {open ? (
+            <FiX onClick={() => setOpen(false)} />
+          ) : (
+            <FiMenu onClick={() => setOpen(true)} />
+          )}
+        </div>
+
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      {open && (
+        <div className="md:hidden bg-black/95 backdrop-blur-lg px-6 py-6 space-y-6 text-gray-300 uppercase tracking-wide text-sm">
+
+          <a href="#hero" onClick={() => setOpen(false)} className="block hover:text-white transition">Home</a>
+          <a href="#about" onClick={() => setOpen(false)} className="block hover:text-white transition">About</a>
+          <a href="#work" onClick={() => setOpen(false)} className="block hover:text-white transition">Experience</a>
+          <a href="#portfolio" onClick={() => setOpen(false)} className="block hover:text-white transition">Projects</a>
+          <a href="#contact" onClick={() => setOpen(false)} className="block hover:text-white transition">Contact</a>
+
+        </div>
+      )}
 
     </nav>
   );

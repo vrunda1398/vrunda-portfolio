@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import profile from "/src/assets/vrunda.jpg";
+
 
 function Hero() {
   return (
@@ -62,7 +64,7 @@ function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            src="/public/vrunda.jpg"
+            src={profile}
             alt="Vrunda Kadam"
             className="w-72 h-72 object-cover rounded-full border-4 border-white"
           />

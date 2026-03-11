@@ -184,7 +184,7 @@ function About() {
         {/* RIGHT SIDE — TECH IMAGE */}
       <div className="flex justify-center">
         <img
-          src="/public/ai-illustration.png"
+          src="/src/assets/ai-illustration.png"
           alt="AI Illustration"
           className="w-[450px] opacity-80"
         />
@@ -251,7 +251,7 @@ function About() {
           {/* Resume Button */}
           <div className="mt-16">
             <a
-              href="/public/Vrunda_VK_Resume.pdf"
+              href="/src/assets/Vrunda_VK_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-block px-10 py-4 bg-purple-600 hover:bg-purple-500 transition rounded-full text-lg font-semibold shadow-lg"
