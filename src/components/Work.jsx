@@ -4,7 +4,7 @@ function Work() {
   return (
     <section
       id="work"
-      className="relative bg-black text-white px-16 py-32 overflow-hidden"
+      className="relative bg-black text-white px-16 py-20 overflow-hidden"
     >
       {/* subtle glow */}
       <div className="absolute -left-40 top-40 w-[400px] h-[400px] bg-purple-700 blur-3xl opacity-20 rounded-full"></div>

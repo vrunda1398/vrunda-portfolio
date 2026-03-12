@@ -177,7 +177,7 @@ function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen bg-gradient-to-br from-black via-[#0b0f1a] to-black text-white px-16 py-32 overflow-hidden"
+      className="relative min-h-screen bg-gradient-to-br from-black via-[#0b0f1a] to-black text-white px-16 py-20 overflow-hidden"
     >
       {/* subtle glow */}
       <div className="absolute -top-32 right-0 w-[400px] h-[400px] bg-purple-700 blur-3xl opacity-20 rounded-full"></div>
@@ -185,7 +185,7 @@ function About() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
         {/* RIGHT SIDE — TECH IMAGE */}
-      <div className="flex justify-center">
+      <div className="hidden md:flex justify-center">
         <img
           src={image}
           alt="AI Illustration"
