@@ -1,109 +1,90 @@
-import {
-  FaPython,
-  FaJava,
-  FaDocker,
-  FaGithub,
-  FaAws
-} from "react-icons/fa";
-
-import {
-  SiSpringboot,
-  SiMysql
-} from "react-icons/si";
-
 import { motion } from "framer-motion";
 
 function Work() {
   return (
     <section
       id="work"
-      className="bg-[#0b0f1a] text-white px-16 py-32"
+      className="relative bg-black text-white px-16 py-32 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
+      {/* subtle glow */}
+      <div className="absolute -left-40 top-40 w-[400px] h-[400px] bg-purple-700 blur-3xl opacity-20 rounded-full"></div>
 
-        {/* Heading */}
-        <h2 className="text-5xl font-bold mb-16">
-          Experience
+      <div className="max-w-6xl mx-auto">
+
+        <h2 className="text-5xl font-bold mb-20">
+          Work Experience
         </h2>
-
-        {/* 🔥 Skills Grid (Original Brand Colors) */}
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-12 mb-24 text-center">
-
-          <div className="flex flex-col items-center space-y-3">
-            <FaPython size={55} color="#3776AB" />
-            <p className="text-gray-400 text-sm">Python</p>
-          </div>
-
-          <div className="flex flex-col items-center space-y-3">
-            <FaJava size={55} color="#ED8B00" />
-            <p className="text-gray-400 text-sm">Java</p>
-          </div>
-
-          <div className="flex flex-col items-center space-y-3">
-            <SiSpringboot size={55} color="#6DB33F" />
-            <p className="text-gray-400 text-sm">Spring Boot</p>
-          </div>
-
-          <div className="flex flex-col items-center space-y-3">
-            <SiMysql size={55} color="#00758F" />
-            <p className="text-gray-400 text-sm">MySQL</p>
-          </div>
-
-          <div className="flex flex-col items-center space-y-3">
-            <FaDocker size={55} color="#2496ED" />
-            <p className="text-gray-400 text-sm">Docker</p>
-          </div>
-
-          <div className="flex flex-col items-center space-y-3">
-            <FaAws size={55} color="#FF9900" />
-            <p className="text-gray-400 text-sm">AWS</p>
-          </div>
-
-        </div>
-
-        {/* 🔥 Experience Cards */}
 
         <div className="space-y-20">
 
           {/* Infosys */}
           <motion.div
-            whileHover={{ y: -5 }}
-            className="bg-black border border-white/10 p-10 rounded-2xl"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="border-l-2 border-purple-600 pl-8"
           >
             <h3 className="text-2xl font-semibold">
               Senior Systems Engineer
             </h3>
 
             <p className="text-purple-400 mt-2">
-              Infosys Limited • April 2021 – May 2024
+              Infosys Limited | April 2021 – May 2024
             </p>
 
-            <p className="text-gray-400 mt-6 leading-relaxed">
-              Led backend development for enterprise applications serving
-              5,000+ users. Designed scalable REST APIs using Java and Spring Boot,
-              increased automated test coverage from 60% to 85%, and automated
-              batch processes reducing manual effort by 30%.
-            </p>
+            <ul className="mt-6 space-y-3 text-gray-400 leading-relaxed list-disc list-inside">
+              <li>
+                Designed and implemented scalable RESTful APIs using Java and Spring Boot,
+                supporting enterprise web applications serving 5,000+ users.
+              </li>
+              <li>
+                Documented and validated APIs using Swagger and Postman,
+                ensuring reliable integration and smooth frontend communication.
+              </li>
+              <li>
+                Increased unit test coverage from 60% to 95% using JUnit and Mockito,
+                improving code quality and reducing post-deployment defects.
+              </li>
+              <li>
+                Automated and monitored batch jobs using UC4 and scripting,
+                reducing manual intervention by 30%.
+              </li>
+              <li>
+                Developed SOAP-based services for third-party system integrations and
+                collaborated with Agile teams to deliver production-ready features.
+              </li>
+            </ul>
           </motion.div>
 
           {/* Research Assistant */}
           <motion.div
-            whileHover={{ y: -5 }}
-            className="bg-black border border-white/10 p-10 rounded-2xl"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="border-l-2 border-purple-600 pl-8"
           >
             <h3 className="text-2xl font-semibold">
               Research Assistant
             </h3>
 
             <p className="text-purple-400 mt-2">
-              University of Michigan – Dearborn • 2024 – Present
+              University of Michigan – Dearborn | May 2025 - Nov 2025
             </p>
 
-            <p className="text-gray-400 mt-6 leading-relaxed">
-              Developed a benchmarking suite to evaluate performance-critical
-              and LLM-generated optimizations using structured runtime analysis
-              and automated evaluation pipelines.
-            </p>
+            <ul className="mt-6 space-y-3 text-gray-400 leading-relaxed list-disc list-inside">
+              <li>
+                Developed a benchmark suite using real-world GitHub commits to evaluate
+                performance-critical and LLM-generated optimizations.
+              </li>
+              <li>
+                Extracted original and optimized code versions, implemented execution
+                harnesses, and measured runtime behavior for performance validation.
+              </li>
+              <li>
+                Automated correctness and performance evaluation through structured
+                benchmarking scripts.
+              </li>
+            </ul>
           </motion.div>
 
         </div>
