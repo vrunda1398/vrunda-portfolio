@@ -44,7 +44,7 @@ function Hero() {
             <div className="bg-white text-black px-8 py-6 rounded-2xl shadow-2xl max-w-lg">
 
               <p className="text-lg leading-relaxed mb-3">
-                I'm a Software Engineer with a master's degree in Computer ans Information Science
+                I'm a Software Engineer with a master's degree in Computer and Information Science
                 and 3+ years of experience in software development.
               </p>
 
