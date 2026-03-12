@@ -19,7 +19,7 @@ function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold text-gray-600"
+            className="text-3xl sm:text-2xl md:text-2xl lg:text-4xl font-bold text-gray-600"
           >
             Hi there, I am
           </motion.h2>
@@ -29,7 +29,7 @@ function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[0.9] mt-4"
+            className="text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-extrabold leading-[0.9] mt-4"
           >
             VRUNDA KADAM
           </motion.h1>
