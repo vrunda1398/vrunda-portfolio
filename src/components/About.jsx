@@ -241,7 +241,7 @@ function About() {
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  I have 3 years of experience in software development, working on innovative projects and enhancing my technical skills at Infosys Ltd.. 
+                  I have 3 years of experience in software development, working on innovative projects and enhancing my technical skills at Infosys Ltd. 
                   I’m passionate about leveraging cutting-edge technologies.
                   I enjoy solving complex technical problems and translating ideas into efficient,
                   production-ready solutions.

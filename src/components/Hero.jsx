@@ -44,12 +44,12 @@ function Hero() {
             <div className="bg-white text-black px-8 py-6 rounded-2xl shadow-2xl max-w-lg">
 
               <p className="text-lg leading-relaxed mb-3">
-                Software Engineer building scalable backend systems
-                and intelligent AI-driven workflows.
+                I'm a Software Engineer with a master's degree in Computer ans Information Science
+                and 3+ years of experience in software development.
               </p>
 
               <div className="text-sm uppercase tracking-widest text-gray-500">
-                Backend • AI • System Design
+                Software Engineer | AI | ML
               </div>
 
             </div>
