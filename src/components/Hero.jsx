@@ -4,7 +4,7 @@ import profile from "/src/assets/vrunda.jpg";
 
 function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center bg-black text-white relative overflow-hidden px-16">
+    <section id="hero" className="min-h-screen flex items-center bg-black text-white relative overflow-hidden px-6 md:px-16 pt-24 md:pt-0">
 
       {/* Background Glow */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-purple-700 rounded-full blur-3xl opacity-30"></div>
@@ -29,7 +29,7 @@ function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-[70px] md:text-[60px] font-extrabold leading-[0.9] mt-4"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[0.9] mt-4"
           >
             VRUNDA KADAM
           </motion.h1>

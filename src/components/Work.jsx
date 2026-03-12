@@ -29,7 +29,9 @@ function Work() {
             </h3>
 
             <p className="text-purple-400 mt-2">
-              Infosys Limited | April 2021 – May 2024
+              Infosys Limited
+              <br/>
+              April 2021 – May 2024
             </p>
 
             <ul className="mt-6 space-y-3 text-gray-400 leading-relaxed list-disc list-inside">
@@ -68,7 +70,9 @@ function Work() {
             </h3>
 
             <p className="text-purple-400 mt-2">
-              University of Michigan – Dearborn | May 2025 - Nov 2025
+              University of Michigan – Dearborn
+            <br/>
+              May 2025 - Nov 2025
             </p>
 
             <ul className="mt-6 space-y-3 text-gray-400 leading-relaxed list-disc list-inside">
